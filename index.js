@@ -1,4 +1,4 @@
 window.onload = init;
 function init() {
-    console.log("JS Loaded");
+    document.getElementById("text").innerText = "developer";
 };
