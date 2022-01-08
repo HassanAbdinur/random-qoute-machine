@@ -45,8 +45,10 @@ function init() {
 };
 
 function generateQuote() {
+    let quoteSize = quoteBank.length;
+
     console.log("Quote Generated");
-    document.getElementById("text").innerText = "Developer";
-    document.getElementById("author").innerText = "The Author";
+    document.getElementById("text").innerText = quoteBank[2].quote;
+    document.getElementById("author").innerText = quoteBank[2].author;
 }
 
