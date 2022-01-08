@@ -34,7 +34,7 @@ const quoteBank = [
         author: "Albert Einstein",
     }, {
         quote: "Life would be tragic if it weren’t funny.",
-        author: "Stephen Hawking",
+        author: "Stephen Hawking"
     }
 
 ]
