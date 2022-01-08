@@ -1,13 +1,11 @@
 const quoteBank = [
-    “The best is yet to be,
-    Try to be a rainbow in someone's cloud,
-    Do good and good will come to you,
-    A positive mindset brings positive things,
-    Positivity always wins
-    When things go wrong, don't go with them.,
-    Live life to the fullest and focus on the positive,
-    Keep looking up"
-];
+    {
+        quote: "try to be a rainbow in someone's cloud, do good and good will come to you, a positive mindset brings positive things, positivity always wins when things go wrong, don't go with them, live life to the fullest and focus on the positive, keep looking up.",
+        author: ""
+    }
+
+]
+
 window.onload = init;
 function init() {
     generateQuote();
