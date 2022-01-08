@@ -1,4 +1,4 @@
-document.window = init;
+window.onload = init;
 function init() {
     console.log("JS Loaded");
 };
