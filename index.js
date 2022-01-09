@@ -40,7 +40,7 @@ const QuoteBank = [
 ]
 
 window.onload = init;
-const init = () => {
+function init() {
     generateQuote();
 };
 
