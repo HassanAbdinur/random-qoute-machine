@@ -40,11 +40,11 @@ const QuoteBank = [
 ]
 
 window.onload = init;
-function init() {
+const init = () => {
     generateQuote();
 };
 
-function generateQuote() {
+const generateQuote = () => {
     let quoteSize = QuoteBank.length;
     let randomIndex = Math.floor(Math.random() * quoteSize);
     let randomQuoteData = QuoteBank[randomIndex];
