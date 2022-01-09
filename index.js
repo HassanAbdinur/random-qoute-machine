@@ -49,6 +49,9 @@ function generateQuote() {
     let randomIndex = Math.floor(Math.random() * quoteSize);
     let randomQuoteData = quoteBank[randomIndex];
 
+    let twitterLink = "https://twitter.com/intent/tweet?hashtags=quotes&amp;related=freecodecamp&amp;text=%22It%20is%20never%20too%20late%20to%20be%20what%20you%20might%20have%20been.%22%20George%20Eliot"
+    
+
     document.getElementById("text").innerText = randomQuoteData.quote;
     document.getElementById("author").innerText = randomQuoteData.author;
 }
