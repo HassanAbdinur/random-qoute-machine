@@ -49,7 +49,7 @@ function generateQuote() {
     let randomIndex = Math.floor(Math.random() * quoteSize);
     let randomQuoteData = QuoteBank[randomIndex];
 
-    let twitterLink = "https://twitter.com/intent/tweet?;text=";
+    let twitterLink = "https://twitter.com/intent/tweet?text=";
 
     // Add The Quote
    let quoteInApiFormat = randomQuoteData.quote.replace(/ /g, "%20");
