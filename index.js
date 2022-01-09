@@ -47,10 +47,9 @@ function init() {
 function generateQuote() {
     let quoteSize = quoteBank.length;
     let randomIndex = Math.floor(Math.random() * quoteSize);
-    let radnomQuoteData = quoteBank[randomIndex];
+    let randomQuoteData = quoteBank[randomIndex];
 
-    console.log("Quote Generated");
-    document.getElementById("text").innerText = quoteBank[2].quote;
-    document.getElementById("author").innerText = quoteBank[2].author;
+    document.getElementById("text").innerText = randomQuoteData.quote;
+    document.getElementById("author").innerText = randomQuoteData.author;
 }
 
