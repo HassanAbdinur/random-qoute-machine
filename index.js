@@ -1,4 +1,4 @@
-const quoteBank = [
+const QuoteBank = [
     {
         quote: "The journey of a thousand miles begins with one step.",
         author: "Lao Tzu"
@@ -45,18 +45,19 @@ function init() {
 };
 
 function generateQuote() {
-    let quoteSize = quoteBank.length;
+    let quoteSize = QuoteBank.length;
     let randomIndex = Math.floor(Math.random() * quoteSize);
-    let randomQuoteData = quoteBank[randomIndex];
+    let randomQuoteData = QuoteBank[randomIndex];
 
-    let twitterLink = "https://twitter.com/intent/tweet?hashtags=quotes&amp;related=freecodecamp&amp;text="
+    let twitterLink = "https://twitter.com/intent/tweet?;text=";
 
     // Add The Quote
-    let quoteInApiFormat = randomQuoteData.quote.replace(/ /g, "%20");
-    twitterLink += quoteInApiFormat 
-    // Add the Author
-    let authorInApiFormat = randomQuoteData.author.replace(/ /g, "%20");
-    twitterLink += " - " + authorInApiFormat;
+   let quoteInApiFormat = randomQuoteData.quote.replace(/ /g, "%20");
+   twitterLink += quoteInApiFormat;
+
+   let authorInApiFormat = randomQuoteData.author.replace(/ /g, "%20");
+
+   twitterLink += authorInApiFormat;
 
     document.getElementById("tweet-quote").href = twitterLink;
     document.getElementById("text").innerText = randomQuoteData.quote;
