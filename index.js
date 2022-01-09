@@ -57,7 +57,7 @@ function generateQuote() {
 
    let authorInApiFormat = randomQuoteData.author.replace(/ /g, "%20");
 
-   twitterLink += authorInApiFormat;
+   twitterLink += " - " + authorInApiFormat;
 
     document.getElementById("tweet-quote").href = twitterLink;
     document.getElementById("text").innerText = randomQuoteData.quote;
