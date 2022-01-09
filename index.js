@@ -46,6 +46,8 @@ function init() {
 
 function generateQuote() {
     let quoteSize = quoteBank.length;
+    let randomIndex = Math.floor(Math.random() * quoteSize);
+    let radnomQuoteData = quoteBank[randomIndex];
 
     console.log("Quote Generated");
     document.getElementById("text").innerText = quoteBank[2].quote;
